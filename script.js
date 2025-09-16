@@ -38,14 +38,18 @@ const cvBtn = document.getElementById('cvBtn');
 const modal = document.getElementById('cvModal');
 const closeBtn = document.querySelector('.close');
 
-cvBtn.addEventListener('click', () => {
+// Open modal
+cvBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // prevent jumping to top
     modal.style.display = 'flex';
 });
 
+// Close modal (by X button)
 closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 });
 
+// Close modal (by clicking outside modal content)
 window.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.style.display = 'none';

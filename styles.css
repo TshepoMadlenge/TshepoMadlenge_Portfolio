@@ -654,3 +654,28 @@ section p {
 .project-card .btn:hover {
   background: #0097a7;
 }
+/* Certificates section */
+.certificates-list {
+    list-style: disc; /* Bullet points */
+    padding-left: 20px; /* Space so bullets align */
+    margin: 0;
+}
+
+.certificates-list li {
+    color: white; /* Text stays white */
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.certificates-list li:hover {
+    color: blue; /* Keep text white on hover */
+}
+.certificates-list li a {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease;
+}
+
+.certificates-list li a:hover {
+    color: blue; /* Stays white on hover */
+}
