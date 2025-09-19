@@ -307,6 +307,19 @@ ul {
   box-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
   transform: translateY(-3px);
 }
+.project-card .btn {
+    display: flex;           /* aligns buttons in a row */
+    justify-content: center; /* centers them horizontally */
+    gap: 10px;               /* space between buttons */
+    margin-top: 20px;        /* space above buttons */
+    flex-wrap: wrap; 
+    padding: 10px 20px;      /* button padding */
+    font-size: 15px;         /* readable text */
+    border-radius: 6px;      /* smooth edges */
+    min-width: 120px;        /* consistent width */
+    text-align: center;      /* centers text */
+    flex: 1 1 auto; 
+}
 
 /* ================== EXPERIENCE ================== */
 .experience {
@@ -516,4 +529,7 @@ ul {
 .project-card:hover {
   box-shadow: 0 0 20px rgba(0, 171, 240, 0.8); /* stronger blue glow on hover */
   transform: translateY(-5px); /* optional: slight lift effect */
+}
+.project-card p {
+  margin-bottom: 20px; /* pushes button lower */
 }
